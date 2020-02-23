@@ -1,38 +1,66 @@
 .App {
+  margin: auto;
+  width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  background-color: #EFF2F9;
+  border: none;
+  border-radius: 7px;
+  color: #6D7782;
+  font-size: 26px;
+  padding: 10px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea.input-field  {
+  display: block;
+  letter-spacing: 0.05rem;
+  resize: none;
+  width: 100%;
+}
+
+.button-wrapper {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.button {
+  color: #FFF;
+  cursor: pointer;
+  background: #0076FF;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  padding: 15px 20px;
+  outline: none;
+}
+
+.error-message {
+  font-weight: bold;
+  font-size: 14px;
+  color: red;
+  margin-top: 15px;
 }
